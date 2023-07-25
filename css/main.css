@@ -31,6 +31,9 @@ body {
 /*COMPONENTS*/
 .header {
   background: hsl(294, 54%, 27%);
+  position: relative;
+  position: fixed;
+  width: 100%;
 }
 .header__wrapper {
   display: flex;
@@ -53,7 +56,49 @@ body {
   display: none;
 }
 .header__nav {
-  display: none;
+  background: hsl(0, 0%, 100%);
+  position: absolute;
+  top: 0rem;
+  right: -100rem;
+  width: 100%;
+  height: 100vh;
+  transition: 0.5s ease;
+}
+.header__nav img {
+  padding: 2rem;
+  width: 15rem;
+}
+.header__nav ul {
+  display: flex;
+  flex-direction: column;
+  margin-top: 6rem;
+}
+.header__nav ul li {
+  padding: 2rem;
+}
+.header__nav ul li a {
+  font-size: 2rem;
+  color: hsl(0, 0%, 0%);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header__nav ul li a i {
+  color: hsl(0, 0%, 0%);
+}
+.header__nav__btn {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 2rem;
+  position: absolute;
+  width: 100%;
+  padding: 2rem;
+  bottom: 3rem;
+}
+.header__nav.open {
+  right: 0rem;
+  transition: 0.5s ease;
 }
 .header__actions {
   display: flex;
@@ -63,16 +108,51 @@ body {
 .header__actions a i {
   color: hsl(0, 0%, 100%);
 }
+.header__actions .toggle__menu {
+  z-index: 999;
+}
 .header__actions .toggle__menu span {
   width: 3rem;
   height: 0.2rem;
   background-color: hsl(0, 0%, 100%);
   display: block;
   border-radius: 5rem;
+  transition: 0.5s;
 }
 .header__actions .toggle__menu span:nth-child(2) {
   margin: 0.3rem 0;
 }
+.header__actions .toggle__menu.open span {
+  background-color: hsl(0, 0%, 0%);
+}
+.header__actions .toggle__menu.open span:first-child {
+  transform: translateY(11px) rotate(225deg);
+  transition: 0.5s ease;
+}
+.header__actions .toggle__menu.open span:nth-child(2) {
+  opacity: 0;
+  transition: 0.5s ease;
+}
+.header__actions .toggle__menu.open span:last-child {
+  transform: translateY(1px) rotate(-225deg);
+}
 .header__actions__btn {
   display: none;
+}
+
+.btn {
+  display: inline-block;
+  padding: 1.5rem 1rem;
+  border: 1px solid transparent;
+  color: hsl(0, 0%, 0%);
+  font-weight: 550;
+}
+.btn.bg--primary {
+  background: hsl(294, 54%, 27%);
+  color: hsl(0, 0%, 100%);
+}
+.btn.bg--light {
+  background: hsl(0, 0%, 100%);
+  color: hsl(294, 54%, 27%);
+  border: 1px solid hsl(294, 54%, 27%);
 }/*# sourceMappingURL=main.css.map */
