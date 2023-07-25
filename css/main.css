@@ -68,23 +68,41 @@ body {
   padding: 2rem;
   width: 15rem;
 }
-.header__nav ul {
+.header__nav ul.nav {
   display: flex;
   flex-direction: column;
   margin-top: 6rem;
 }
-.header__nav ul li {
+.header__nav ul.nav li {
   padding: 2rem;
 }
-.header__nav ul li a {
+.header__nav ul.nav li a {
   font-size: 2rem;
   color: hsl(0, 0%, 0%);
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.header__nav ul li a i {
+.header__nav ul.nav li a i {
   color: hsl(0, 0%, 0%);
+  transition: 0.5s ease;
+}
+.header__nav ul.nav li a i.open {
+  transform: rotate(90deg);
+  transition: 0.5s ease;
+}
+.header__nav ul.nav ul.drop {
+  margin: 0 3rem;
+  max-height: 0rem;
+  overflow: hidden;
+  transition: 0.5s ease;
+}
+.header__nav ul.nav ul.drop li a {
+  font-size: 1.5rem;
+}
+.header__nav ul.nav ul.drop.open {
+  max-height: 50rem;
+  transition: 0.5s ease;
 }
 .header__nav__btn {
   display: flex;
@@ -139,6 +157,11 @@ body {
 .header__actions__btn {
   display: none;
 }
+@media screen and (min-width: 940px) {
+  .header__nav {
+    display: none;
+  }
+}
 
 .btn {
   display: inline-block;
@@ -146,13 +169,61 @@ body {
   border: 1px solid transparent;
   color: hsl(0, 0%, 0%);
   font-weight: 550;
+  position: relative;
 }
 .btn.bg--primary {
   background: hsl(294, 54%, 27%);
   color: hsl(0, 0%, 100%);
+  border: 1px solid hsl(0, 0%, 100%);
+}
+.btn.bg--primary::before {
+  content: "";
+  width: 0%;
+  height: 100%;
+  background-color: hsl(0, 0%, 100%);
+  transform-origin: left;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: 0.5s ease;
+  z-index: -1;
+}
+.btn.bg--primary:hover::before {
+  width: 100%;
+  transition: 0.5s ease;
+}
+.btn.bg--primary:hover {
+  color: hsl(294, 54%, 27%);
+  z-index: 999;
+  border: 1px solid hsl(294, 54%, 27%);
+  transition: 0.5s ease;
 }
 .btn.bg--light {
   background: hsl(0, 0%, 100%);
   color: hsl(294, 54%, 27%);
   border: 1px solid hsl(294, 54%, 27%);
+}
+.btn.bg--light::before {
+  content: "";
+  width: 0%;
+  height: 100%;
+  background-color: hsl(294, 54%, 27%);
+  transform-origin: left;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: 0.5s ease;
+  z-index: -1;
+}
+.btn.bg--light:hover::before {
+  width: 100%;
+  transition: 0.5s ease;
+}
+.btn.bg--light:hover {
+  color: hsl(0, 0%, 100%);
+  z-index: 999;
+  border: 1px solid hsl(294, 54%, 27%);
+  transition: 0.5s ease;
 }/*# sourceMappingURL=main.css.map */
