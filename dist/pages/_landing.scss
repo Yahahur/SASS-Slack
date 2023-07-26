@@ -4,10 +4,6 @@
     position: relative;
     width: 100%;
     z-index: -1;
-    .container{
-        transition: .5s ease;
-        padding-bottom: 0rem;
-    }
     &__wrapper{
         padding: 1rem;
         h1{
@@ -23,42 +19,109 @@
             font-size:1.8rem;
             text-align: center;
         }
-        .btn{
-            display: flex;
-            text-align: center;
-            flex-direction: column;
-            margin-top: 3rem;
-            margin-bottom: 3rem;
-            border-radius: 0;
-        }
-        a{
-            display: flex;
-            align-items: center;
-            img{
-                max-width: 4rem;
-                background-color: $clr-light;
-            }
-        }
-        
     }
     video{
         @include imgFit(100%, 100%);
     }
+    &__btn{
+        display: flex;
+        flex-direction: column;
+        margin:2rem 0;
+        gap: 2rem;
+        a{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            span{
+                margin-left: 4rem;
+            }
+            img{
+                position: absolute;
+                left: 2rem;
+                width: 3rem;
+                background-color: $clr-light;
+                height: 3rem;
+                padding: .5rem;
+            }
+        }
+    }
+
+@include mediaQuery($break-xl){
+        &__wrapper{
+            display: grid;
+            grid-template-columns: 2fr 2fr;
+            gap: 10rem;
+            padding-bottom: 10rem;
+            .banner__video{
+                video{
+                    width: 80rem;
+                    @include imgFit(100%, 100%);
+                } 
+            }
+        }
+        h1{
+            font-size: 6rem;
+            max-width: 70rem;
+            text-align: left;
+        }
+        &__text{
+            p{
+                max-width: 61rem;
+                text-align: left;
+            }
+        }
+        &__btn{
+            display: flex;
+            max-width: 60rem;
+            flex-direction: row;
+            a{
+                img{
+                    left: 1rem;
+                }
+            }
+        }
+        
+    }
 }
+
 
 .trust{
     background: $clr-fwhite;
     position: relative;
     width: 100%;
     z-index: -1;
-    .container{
-    }
     &__wrapper{
-        padding: 1rem;
+        padding: 3rem;
         h1{
             color: $clr-dark;
             font-size:1.5rem;
             text-align: center;
+        }
+    }
+.img__logo{
+        ul{
+            gap: 6.8rem;
+        li{
+        img {
+            width: 10rem;
+            }
+        }
+        }
+    }       
+
+
+@include mediaQuery($break-xl){
+    &__wrapper{
+        padding: 3rem;
+        h1{
+            color: $clr-dark;
+            font-size:1.5rem;
+            text-align: center;
+        }
+        .img__logo{
+            font-size: 20rem;
+        }
         }
 }
 }
