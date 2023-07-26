@@ -1,0 +1,58 @@
+.banner{
+    background: $clr-primary;
+    padding-top: 8rem;
+    position: relative;
+    width: 100%;
+    z-index: -1;
+    .container{
+        transition: .5s ease;
+        padding-bottom: 0rem;
+    }
+    &__wrapper{
+        padding: 1rem;
+        h1{
+            color: $clr-light;
+            font-size:4rem;
+            text-align: center;
+            span{
+                color: $clr-yellow;
+            }
+        }
+        p{
+            color: $clr-light;
+            font-size:1.8rem;
+            text-align: center;
+        }
+        &__btn{
+            flex-direction: column;
+            text-align: center;
+            gap: 2rem;
+            position: absolute;
+            width: 100%;
+            padding: 2rem;
+            bottom: 3rem;
+        }
+        .btn{
+            gap:2rem;
+            display: flex;
+            text-align: center;
+            flex-direction: column;
+            margin-top: 3rem;
+            margin-bottom: 3rem;
+            border-radius: 0;
+        }
+        a{
+            img{
+                max-width: 4rem;
+                background-color: $clr-light;
+            }
+        }
+        
+    }
+    video{
+        max-height: 275px;
+        object-fit: cover;
+    }
+    
+}
+    

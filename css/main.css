@@ -276,4 +276,94 @@ body {
   z-index: 999;
   border: 1px solid hsl(294, 54%, 27%);
   transition: 0.5s ease;
+}
+.btn.bg--email {
+  background: hsl(0, 0%, 100%);
+  color: hsl(294, 54%, 27%);
+  border: 1px solid hsl(0, 0%, 100%);
+}
+.btn.bg::before {
+  content: "";
+  width: 0%;
+  height: 100%;
+  background-color: hsl(0, 0%, 100%);
+  transform-origin: left;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: 0.5s ease;
+  z-index: -1;
+  border-radius: 1rem;
+}
+.btn.bg:hover::before {
+  width: 100%;
+  transition: 0.5s ease;
+}
+.btn.bg:hover {
+  color: hsl(294, 54%, 27%);
+  z-index: 999;
+  border: 1px solid hsl(294, 54%, 27%);
+  transition: 0.5s ease;
+}
+.btn.bg--google {
+  background: hsl(208, 92%, 52%);
+  color: hsl(0, 0%, 100%);
+  border: 1px solid hsl(208, 92%, 52%);
+}
+
+/*PAGES*/
+.banner {
+  background: hsl(294, 54%, 27%);
+  padding-top: 8rem;
+  position: relative;
+  width: 100%;
+  z-index: -1;
+}
+.banner .container {
+  transition: 0.5s ease;
+  padding-bottom: 0rem;
+}
+.banner__wrapper {
+  padding: 1rem;
+}
+.banner__wrapper h1 {
+  color: hsl(0, 0%, 100%);
+  font-size: 4rem;
+  text-align: center;
+}
+.banner__wrapper h1 span {
+  color: hsl(39, 96%, 44%);
+}
+.banner__wrapper p {
+  color: hsl(0, 0%, 100%);
+  font-size: 1.8rem;
+  text-align: center;
+}
+.banner__wrapper__btn {
+  flex-direction: column;
+  text-align: center;
+  gap: 2rem;
+  position: absolute;
+  width: 100%;
+  padding: 2rem;
+  bottom: 3rem;
+}
+.banner__wrapper .btn {
+  gap: 2rem;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  border-radius: 0;
+}
+.banner__wrapper a img {
+  max-width: 4rem;
+  background-color: hsl(0, 0%, 100%);
+}
+.banner video {
+  max-height: 275px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }/*# sourceMappingURL=main.css.map */
