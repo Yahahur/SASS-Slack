@@ -268,4 +268,35 @@
     position: relative;
     width: 100%;
     z-index: -1;
+    &__wrapper{
+        padding: 1rem;
+    }
+    &__text{
+        h1{
+            padding-top: 4rem;
+            font-size: 3.4rem;
+            text-align: center;
+        }
+        p{
+            padding-top: 2rem;
+            font-size: 2rem;
+            text-align: center;
+        }
+    }
+    &__text2{
+        text-align: center;
+        p{
+            padding-top: 5rem;
+            font-size: 5rem;
+            font-weight: bold;
+            color: $clr-dprimary;
+        }
+        ul{
+            font-size: 1.5rem;
+            width: 40%;
+            margin: 0 auto;
+        }
+
+        
+    }
 }
