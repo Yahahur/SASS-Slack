@@ -6,6 +6,7 @@
     z-index: -1;
     &__wrapper{
         padding: 1rem;
+        padding-top: 5rem;
         h1{
             color: $clr-light;
             font-size:3.7rem;
@@ -24,7 +25,7 @@
         }
     }
     video{
-        @include imgFit(100%, 100%);
+        @include imgFit(106%, 100%);
     }
     &__btn{
         display: flex;
@@ -76,7 +77,7 @@
         }
         &__btn{
             display: flex;
-            max-width: 60rem;
+            max-width: rem;
             flex-direction: row;
             a{
                 img{
@@ -97,7 +98,6 @@
         padding-top: 5rem;
     }
         ul{
-            display: flex;
             align-items: center;
             justify-content: space-between;
         }
@@ -118,12 +118,7 @@
         h1{
             color: $clr-dark;
             font-size:1.5rem;
-            text-align: center;
         }
-        li {
-            justify-content: space-between;
-            }
-    
         }
     }
 }
@@ -148,6 +143,9 @@
         font-size: 1.8rem;
         padding-bottom: 4rem;
     }
+    a{
+        font-size: 2rem;
+    }
 }
 .kamote2{
     video{
@@ -156,97 +154,118 @@
         transform: translateX(2rem);
     }
     h1{
+        padding-top: 4rem;
         margin:.7em auto -.8em ;
-        font-size: 3rem;
+        font-size: 4rem;
     }
     p{
         padding-top: 4rem;
-        font-size: 1.8rem;
+        font-size: 2rem;
         padding-bottom: 4rem;
+    }
+    a{
+        font-size: 2rem;
     }
 }
 .kamote3{
     video{
-        padding-top: 5rem;
+        padding-top: 8rem;
         @include imgFit(100%, 100%);
         transform: translateX(-1.5rem);
     }
     h1{
-        margin:.7em auto -.8em ;
+        margin: 2em auto -.8em ;
         font-size: 3rem;
     }
     p{
         padding-top: 4rem;
         font-size: 1.8rem;
         padding-bottom: 4rem;
+    }
+    a{
+        font-size: 2rem;
     }
 }
 
 @include mediaQuery($break-xl){
     background: $clr-fwhite;
-    position: relative;
     width: 100%;
-    z-index: -1;
-    height: 800rem;
-    .kamote1{
-        display: flex;
-        grid-template-columns: 1fr 1fr;
-        display: grid;
-        video{
-            padding-top: 3rem;
-            max-width: 70rem;
-            transform: translateX(-1.5rem);
+    height: 165rem;
+    &__wrapper{
+    display: flex;
+    flex-direction: column;
+        .kamote1{
+            display: flex;
+            video{
+                padding-top: 4rem;
+                max-width: 70rem;
+            }
+            h1{
+                padding-top: 3rem;
+                padding-left: 15rem;
+                font-size: 5rem;
+            }
+            p{
+                padding-left: 15rem;
+                padding-top: 8rem;
+                font-size: 2.3rem;
+                text-align: justify;
+            }
+            a{
+                padding-left: 15rem;
+                font-size: 2rem;
+            }
         }
-        h1{
-            font-size: 5rem;
-            padding-left: 8rem;
+        .kamote2{
+            flex-direction: row-reverse;
+            display: flex;
+            padding-top: 10rem;
+            justify-content: space-between;
+            video{
+                max-width: 70rem;
+            }
+            h1{
+                font-size: 5rem;  
+                max-width: 80rem;
+            }
+            p{
+                max-width: 60rem;
+                padding-top: 8rem;
+            }
+            a{
+                font-size: 2rem;
+            }
         }
-        p{
-            padding-left: 8rem;
-        }
-        a{
-            padding-left: 8rem;
-        }
-    }
-    .kamote2{
-        display: flex;
-        grid-template-columns: 1fr 1fr;
-        display: grid;
-        video{
+        .kamote3{
+            display: flex;
             padding-top: 5rem;
-            max-width: 70rem;
-            transform: translateX(70rem);
-        }
-        h1{
-
-            font-size: 5rem;
-        }
-        p{
-            max-width: 55rem;
-        }
-    }
-    .kamote3{
-        display: flex;
-        grid-template-columns: 1fr 1fr;
-        display: grid;
-        video{
-            padding-top: 5rem;
-            max-width: 70rem;
-            transform: translateX(-1.5rem);
-        }
-        h1{
-            font-size: 5rem;
-            padding-left: 8rem;
-        }
-        p{
-            padding-left: 8rem;
-        }
-        a{
-            padding-left: 8rem;
+            video{
+                max-width: 70rem;
+            }
+            h1{
+                padding-top: 4rem;
+                padding-left: 15rem;
+                font-size: 4rem;
+            }
+            p{
+                padding-left: 15rem;
+                padding-top: 8rem;
+                font-size: 2.3rem;
+                text-align: justify;
+            }
+            a{
+                padding-left: 15rem;
+                font-size: 2rem;
+            }
         }
     }
     }
-    
 }
 
 
+.teamslarge{
+    background: $clr-light;
+    position: relative;
+    width: 100%;
+    z-index: -1;
+}

@@ -853,25 +853,35 @@ body {
   border: 1px solid hsl(294, 54%, 27%);
   transition: 0.5s ease;
 }
-.btn.bgg--email {
+.btn.bg--email {
   background: hsl(0, 0%, 100%);
   color: hsl(294, 54%, 27%);
   border: 1px solid hsl(0, 0%, 100%);
 }
-.btn.bgg:hover::before {
+.btn.bg:hover::before {
   width: 100%;
   transition: 0.5s ease;
 }
-.btn.bgg:hover {
+.btn.bg:hover {
   color: hsl(294, 54%, 27%);
   z-index: 999;
   border: 1px solid hsl(294, 54%, 27%);
   transition: 0.5s ease;
 }
-.btn.bgg--google {
+.btn.bg--google {
   background: hsl(208, 92%, 52%);
   color: hsl(0, 0%, 100%);
   border: 1px solid hsl(208, 92%, 52%);
+}
+.btn.bg--enterprise {
+  background: hsl(294, 54%, 27%);
+  color: hsl(0, 0%, 100%);
+  border: 1px solid hsl(0, 0%, 100%);
+}
+.btn.bg--sales {
+  background: hsl(0, 0%, 100%);
+  color: hsl(294, 54%, 27%);
+  border: 1px solid hsl(294, 54%, 27%);
 }
 
 /*PAGES*/
@@ -884,6 +894,7 @@ body {
 }
 .banner__wrapper {
   padding: 1rem;
+  padding-top: 5rem;
 }
 .banner__wrapper h1 {
   color: hsl(0, 0%, 100%);
@@ -902,7 +913,7 @@ body {
   font-display: unset;
 }
 .banner video {
-  width: 100%;
+  width: 106%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
@@ -955,7 +966,7 @@ body {
   }
   .banner__btn {
     display: flex;
-    max-width: 60rem;
+    max-width: rem;
     flex-direction: row;
   }
   .banner__btn a img {
@@ -973,7 +984,6 @@ body {
   padding-top: 5rem;
 }
 .trust ul {
-  display: flex;
   align-items: center;
   justify-content: space-between;
 }
@@ -992,10 +1002,6 @@ body {
   .trust__wrapper h1 {
     color: hsl(0, 0%, 0%);
     font-size: 1.5rem;
-    text-align: center;
-  }
-  .trust__wrapper li {
-    justify-content: space-between;
   }
 }
 
@@ -1022,6 +1028,9 @@ body {
   font-size: 1.8rem;
   padding-bottom: 4rem;
 }
+.movefaster .kamote1 a {
+  font-size: 2rem;
+}
 .movefaster .kamote2 video {
   padding-top: 5rem;
   width: 100%;
@@ -1031,16 +1040,20 @@ body {
   transform: translateX(2rem);
 }
 .movefaster .kamote2 h1 {
+  padding-top: 4rem;
   margin: 0.7em auto -0.8em;
-  font-size: 3rem;
+  font-size: 4rem;
 }
 .movefaster .kamote2 p {
   padding-top: 4rem;
-  font-size: 1.8rem;
+  font-size: 2rem;
   padding-bottom: 4rem;
 }
+.movefaster .kamote2 a {
+  font-size: 2rem;
+}
 .movefaster .kamote3 video {
-  padding-top: 5rem;
+  padding-top: 8rem;
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
@@ -1048,7 +1061,7 @@ body {
   transform: translateX(-1.5rem);
 }
 .movefaster .kamote3 h1 {
-  margin: 0.7em auto -0.8em;
+  margin: 2em auto -0.8em;
   font-size: 3rem;
 }
 .movefaster .kamote3 p {
@@ -1056,68 +1069,121 @@ body {
   font-size: 1.8rem;
   padding-bottom: 4rem;
 }
+.movefaster .kamote3 a {
+  font-size: 2rem;
+}
 @media screen and (min-width: 1040px) {
   .movefaster {
     background: hsl(34, 42%, 93%);
-    position: relative;
     width: 100%;
-    z-index: -1;
-    height: 800rem;
+    height: 165rem;
   }
-  .movefaster .kamote1 {
+  .movefaster__wrapper {
     display: flex;
-    grid-template-columns: 1fr 1fr;
-    display: grid;
+    flex-direction: column;
   }
-  .movefaster .kamote1 video {
+  .movefaster__wrapper .kamote1 {
+    display: flex;
+  }
+  .movefaster__wrapper .kamote1 video {
+    padding-top: 4rem;
+    max-width: 70rem;
+  }
+  .movefaster__wrapper .kamote1 h1 {
     padding-top: 3rem;
-    max-width: 70rem;
-    transform: translateX(-1.5rem);
-  }
-  .movefaster .kamote1 h1 {
+    padding-left: 15rem;
     font-size: 5rem;
-    padding-left: 8rem;
   }
-  .movefaster .kamote1 p {
-    padding-left: 8rem;
+  .movefaster__wrapper .kamote1 p {
+    padding-left: 15rem;
+    padding-top: 8rem;
+    font-size: 2.3rem;
+    text-align: justify;
   }
-  .movefaster .kamote1 a {
-    padding-left: 8rem;
+  .movefaster__wrapper .kamote1 a {
+    padding-left: 15rem;
+    font-size: 2rem;
   }
-  .movefaster .kamote2 {
+  .movefaster__wrapper .kamote2 {
+    flex-direction: row-reverse;
     display: flex;
-    grid-template-columns: 1fr 1fr;
-    display: grid;
+    padding-top: 10rem;
+    justify-content: space-between;
   }
-  .movefaster .kamote2 video {
-    padding-top: 5rem;
+  .movefaster__wrapper .kamote2 video {
     max-width: 70rem;
-    transform: translateX(70rem);
   }
-  .movefaster .kamote2 h1 {
+  .movefaster__wrapper .kamote2 h1 {
     font-size: 5rem;
+    max-width: 80rem;
   }
-  .movefaster .kamote2 p {
-    max-width: 55rem;
+  .movefaster__wrapper .kamote2 p {
+    max-width: 60rem;
+    padding-top: 8rem;
   }
-  .movefaster .kamote3 {
+  .movefaster__wrapper .kamote2 a {
+    font-size: 2rem;
+  }
+  .movefaster__wrapper .kamote3 {
     display: flex;
-    grid-template-columns: 1fr 1fr;
-    display: grid;
-  }
-  .movefaster .kamote3 video {
     padding-top: 5rem;
+  }
+  .movefaster__wrapper .kamote3 video {
     max-width: 70rem;
-    transform: translateX(-1.5rem);
   }
-  .movefaster .kamote3 h1 {
-    font-size: 5rem;
-    padding-left: 8rem;
+  .movefaster__wrapper .kamote3 h1 {
+    padding-top: 4rem;
+    padding-left: 15rem;
+    font-size: 4rem;
   }
-  .movefaster .kamote3 p {
-    padding-left: 8rem;
+  .movefaster__wrapper .kamote3 p {
+    padding-left: 15rem;
+    padding-top: 8rem;
+    font-size: 2.3rem;
+    text-align: justify;
   }
-  .movefaster .kamote3 a {
-    padding-left: 8rem;
+  .movefaster__wrapper .kamote3 a {
+    padding-left: 15rem;
+    font-size: 2rem;
   }
+}
+
+.teamslarge {
+  background: hsl(0, 0%, 100%);
+  position: relative;
+  width: 100%;
+  z-index: -1;
+}
+
+/*FOOTER*/
+.footer__left ul li {
+  padding: 2rem 0;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+.footer__left ul li a {
+  color: hsl(0, 0%, 0%);
+}
+.footer__left .modal {
+  padding: 2rem;
+  overflow-y: auto;
+  display: none;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background: hsl(0, 0%, 100%);
+  top: auto;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9999;
+}
+.footer__left .modal.active {
+  display: block;
+}
+.footer__left .modal button {
+  float: right;
+  background: transparent;
+  border: 0 solid transparent;
+  font-size: 2.5rem;
 }/*# sourceMappingURL=main.css.map */
