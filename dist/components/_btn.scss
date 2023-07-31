@@ -95,6 +95,16 @@
         color: $clr-light;
         border: 1px solid $clr-light;
         }
+        &:hover::before{
+            width: 100%;
+            transition: .5s ease;
+        }
+        &:hover{
+            color: $clr-primary;
+            z-index: 999;
+            border: 1px solid $clr-primary;
+            transition: .5s ease;
+        }
         &--sales{
         background: $clr-light;
         color: $clr-primary;
