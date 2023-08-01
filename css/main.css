@@ -795,6 +795,7 @@ body {
   font-weight: 550;
   position: relative;
   border-radius: 1rem;
+  cursor: pointer;
 }
 .btn.bg--primary {
   background: hsl(294, 54%, 27%);
@@ -1260,6 +1261,7 @@ body {
 }
 .teamslarge__text2 {
   text-align: center;
+  justify-content: space-between;
 }
 .teamslarge__text2 p {
   padding-top: 5rem;
@@ -1345,7 +1347,8 @@ body {
     display: flex;
     padding-left: 5rem;
     padding-top: 10rem;
-    font-size: 3rem;
+    font-size: 2.5rem;
+    max-width: 100rem;
   }
   .teamslarge .teamslarge__text3 p {
     padding-top: 1rem;
@@ -1354,12 +1357,12 @@ body {
   }
   .teamslarge .teamslarge__text3 ul {
     padding-left: 5rem;
-    font-size: 1rem;
+    font-size: 1.4rem;
   }
   .teamslarge .teamslarge__text3 a {
-    padding-top: 1rem;
+    padding-top: 2rem;
     padding-left: 5rem;
-    font-size: 1rem;
+    font-size: 2rem;
   }
 }
 

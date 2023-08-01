@@ -6,6 +6,7 @@
     font-weight:550;
     position: relative;
     border-radius: 1rem;
+    cursor: pointer;
     &.bg{
         &--primary{
         background: $clr-primary;
@@ -71,7 +72,6 @@
         background: $clr-light;
         color: $clr-primary;
         border: 1px solid $clr-light;
-        
         }
         &--google{
         background: $clr-blue;

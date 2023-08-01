@@ -286,6 +286,7 @@
     }
     &__text2{
         text-align: center;
+        justify-content: space-between;
         p{
             padding-top: 5rem;
             font-size: 5rem;
@@ -354,6 +355,7 @@
     }
     &__text2{
         display: flex;
+        
     }
     &__btn{
         display: flex;
@@ -370,7 +372,8 @@
                 display: flex;
                 padding-left: 5rem;
                 padding-top: 10rem;
-                font-size: 3rem;
+                font-size: 2.5rem;
+                max-width: 100rem;
             }
             p{
                 padding-top: 1rem;
@@ -379,12 +382,12 @@
             }
             ul{
                 padding-left: 5rem;
-                font-size: 1rem;
+                font-size: 1.4rem;
             }
             a{
-                padding-top: 1rem;
+                padding-top: 2rem;
                 padding-left: 5rem;
-                font-size: 1rem;
+                font-size: 2rem;
             }
 }
     }
