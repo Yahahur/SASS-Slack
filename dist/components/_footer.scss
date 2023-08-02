@@ -1,3 +1,35 @@
+.footerup{
+    &__wrapper{
+        padding: 1rem;
+        margin: 0;
+    }
+    &__text{
+        display: flex;
+        flex-direction: row;
+        font-size: 1.2rem;
+        gap: 1.3rem;
+        
+    }
+    &__why__slack{
+        
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .footer{
     &__left{
         ul{

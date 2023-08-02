@@ -214,6 +214,7 @@
             a{
                 padding-left: 15rem;
                 font-size: 2rem;
+                color: $clr-blue;
             }
         }
         .kamote2{
@@ -234,6 +235,7 @@
             }
             a{
                 font-size: 2rem;
+                color: $clr-blue;
             }
         }
         .kamote3{
@@ -256,6 +258,7 @@
             a{
                 padding-left: 15rem;
                 font-size: 2rem;
+                color: $clr-blue;
             }
         }
     }
@@ -269,6 +272,7 @@
     width: 100%;
     z-index: -1;
     display: flex;
+    justify-content: space-between;
     &__wrapper{
         padding: 1rem;
     }
@@ -295,7 +299,7 @@
         }
         ul{
             font-size: 1.5rem;
-            width: 40%;
+            width: 70%;
             margin: 0 auto;
         }
     }
@@ -354,8 +358,11 @@
         }
     }
     &__text2{
-        display: flex;
-        
+        ul{
+            display: flex;
+            gap: 15rem;
+            justify-content: center;
+        }
     }
     &__btn{
         display: flex;
@@ -399,8 +406,9 @@
     background-color: $clr-fwhite;
     &__wrapper{
         h3{
+            padding: 2rem;
             text-align: center;
-            font-size: 2.5rem;
+            font-size: 2.3rem;
         }
     }
     .slider__item{
@@ -413,6 +421,9 @@
             font-size: 1.4rem;
             font-weight: lighter;
             padding-bottom: 2rem;
+        }
+        a{
+            color: $clr-blue;
         }
         img{
             width: 100%;
@@ -468,6 +479,19 @@
         border: 1px dashed $clr-primary;
     }
             }
+
+    @include mediaQuery($break-xl){
+        &__wrapper{
+            h3{
+                font-size: 3rem;
+                padding-bottom: 3rem;
+                padding-top: 3rem;
+            }
+            a{
+                
+            }
+        }
+    }
 }
 
 .seeall{

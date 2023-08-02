@@ -1194,6 +1194,7 @@ body {
   .movefaster__wrapper .kamote1 a {
     padding-left: 15rem;
     font-size: 2rem;
+    color: hsl(208, 92%, 52%);
   }
   .movefaster__wrapper .kamote2 {
     flex-direction: row-reverse;
@@ -1214,6 +1215,7 @@ body {
   }
   .movefaster__wrapper .kamote2 a {
     font-size: 2rem;
+    color: hsl(208, 92%, 52%);
   }
   .movefaster__wrapper .kamote3 {
     display: flex;
@@ -1236,6 +1238,7 @@ body {
   .movefaster__wrapper .kamote3 a {
     padding-left: 15rem;
     font-size: 2rem;
+    color: hsl(208, 92%, 52%);
   }
 }
 
@@ -1245,6 +1248,7 @@ body {
   width: 100%;
   z-index: -1;
   display: flex;
+  justify-content: space-between;
 }
 .teamslarge__wrapper {
   padding: 1rem;
@@ -1271,7 +1275,7 @@ body {
 }
 .teamslarge__text2 ul {
   font-size: 1.5rem;
-  width: 40%;
+  width: 70%;
   margin: 0 auto;
 }
 .teamslarge video {
@@ -1328,8 +1332,10 @@ body {
     font-size: 2rem;
     text-align: center;
   }
-  .teamslarge__text2 {
+  .teamslarge__text2 ul {
     display: flex;
+    gap: 15rem;
+    justify-content: center;
   }
   .teamslarge__btn {
     display: flex;
@@ -1370,8 +1376,9 @@ body {
   background-color: hsl(34, 42%, 93%);
 }
 .work__wrapper h3 {
+  padding: 2rem;
   text-align: center;
-  font-size: 2.5rem;
+  font-size: 2.3rem;
 }
 .work .slider__item {
   height: 40rem;
@@ -1384,6 +1391,9 @@ body {
   font-size: 1.4rem;
   font-weight: lighter;
   padding-bottom: 2rem;
+}
+.work .slider__item a {
+  color: hsl(208, 92%, 52%);
 }
 .work .slider__item img {
   width: 100%;
@@ -1435,6 +1445,13 @@ body {
   border-radius: 50%;
   border: 1px dashed hsl(294, 54%, 27%);
 }
+@media screen and (min-width: 1040px) {
+  .work__wrapper h3 {
+    font-size: 3rem;
+    padding-bottom: 3rem;
+    padding-top: 3rem;
+  }
+}
 
 .seeall {
   background: hsl(300, 62%, 15%);
@@ -1472,6 +1489,16 @@ body {
 }
 
 /*FOOTER*/
+.footerup__wrapper {
+  padding: 1rem;
+  margin: 0;
+}
+.footerup__text {
+  display: flex;
+  flex-direction: row;
+  font-size: 1.2rem;
+  gap: 1.3rem;
+}
 .footer__left ul li {
   padding: 2rem 0;
   font-size: 1.4rem;
